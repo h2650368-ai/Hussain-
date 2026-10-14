@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080808">
+<title>EGO — Hussein Hisham</title>
+<meta name="description" content="EGO — مساحة حسين هشام للمشاريع والخدمات الرقمية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070707;--panel:#101010;--panel2:#151515;--red:#ff2438;--red2:#a90018;--white:#f6f6f6;--muted:#a5a5a5;--line:#2a171b;--green:#63e6a5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'Cairo',sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 0%,#4d061422,transparent 50%),linear-gradient(90deg,transparent 49.9%,#ff24380a 50%,transparent 50.1%);z-index:-1}button,input,textarea,select{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.hidden{display:none!important}.matrix{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.24;pointer-events:none}.wrap{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#070707d9;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 0}.brand{font-weight:900;font-size:26px;letter-spacing:5px;direction:ltr}.brand span{color:var(--red);text-shadow:0 0 22px #ff243866}.navlinks{display:flex;gap:20px;align-items:center;color:#c8c8c8;font-size:13px}.navlinks a:hover{color:var(--red)}.btn{border:1px solid #57202a;background:linear-gradient(135deg,#ff2438,#a90018);color:white;border-radius:10px;padding:11px 17px;font-weight:800;cursor:pointer;transition:.2s;box-shadow:0 5px 25px #ff24381c}.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}.btn.ghost{background:#ffffff06;border-color:#ffffff20;box-shadow:none}.btn.small{padding:8px 12px;font-size:12px}.intro{position:fixed;inset:0;z-index:100;background:#030303;display:grid;place-items:center;overflow:hidden;transition:opacity .8s,visibility .8s}.intro.out{opacity:0;visibility:hidden}.intro:before{content:"";position:absolute;inset:0;background:radial-gradient(circle,#5c001522,transparent 55%)}.intro-content{text-align:center;position:relative;z-index:2}.intro-kicker{color:#ff6371;font-size:11px;letter-spacing:5px;direction:ltr}.intro-logo{font-size:clamp(70px,19vw,160px);line-height:1;font-weight:900;letter-spacing:12px;direction:ltr;color:#fff;text-shadow:0 0 12px #ff2438,0 0 55px #ff243866;animation:glitch 2.8s infinite}.intro-sub{color:#888;font-size:12px;letter-spacing:3px;direction:ltr;margin:20px 0}.intro-line{height:2px;width:min(260px,70vw);background:#252525;margin:20px auto;overflow:hidden}.intro-line:after{content:"";display:block;height:100%;width:40%;background:var(--red);animation:load 2s infinite}@keyframes load{from{transform:translateX(250%)}to{transform:translateX(-250%)}}@keyframes glitch{0%,94%,100%{transform:translate(0)}95%{transform:translate(3px,-2px)}97%{transform:translate(-3px,1px)}}.skip{margin-top:18px;background:transparent;color:#999;border:1px solid #333;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:12px}.hero{min-height:74vh;display:grid;align-items:center;padding:70px 0 55px;position:relative}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #472029;background:#ff24380c;color:#ff6675;border-radius:100px;padding:7px 12px;font-size:12px}.pulse{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}h1{font-size:clamp(42px,7vw,78px);line-height:1.12;margin:22px 0;font-weight:900}h1 .red{color:var(--red);text-shadow:0 0 35px #ff243822}.hero p{color:#b7b7b7;line-height:2;max-width:590px;font-size:15px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.hero-card{border:1px solid #492027;background:linear-gradient(145deg,#17090cdd,#090909f2);padding:28px;border-radius:20px;box-shadow:0 25px 90px #000;position:relative;overflow:hidden}.hero-card:before{content:"E";position:absolute;left:-12px;top:-60px;font-size:240px;font-weight:900;color:#ff243808;direction:ltr}.mini-label{color:#888;font-size:11px;letter-spacing:2px;direction:ltr}.big-number{font-size:52px;font-weight:900;color:var(--red);direction:ltr}.hero-card p{font-size:13px}.statrow{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:18px}.stat{border:1px solid #ffffff12;background:#ffffff05;padding:14px;border-radius:12px}.stat strong{display:block;font-size:19px}.stat span{font-size:11px;color:#999}.section{padding:70px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:25px}.section-head h2{font-size:clamp(26px,4vw,40px);margin:0;font-weight:900}.section-head h2 span{color:var(--red)}.section-head p{color:#999;font-size:13px;margin:8px 0 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.empty{grid-column:1/-1;border:1px dashed #3b292c;border-radius:16px;padding:30px;text-align:center;color:#999;line-height:2;background:#ffffff03}.card{border:1px solid #282023;background:linear-gradient(150deg,#121212,#090909);border-radius:16px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#71303b;box-shadow:0 16px 35px #0008}.cover{aspect-ratio:16/10;background:#171717;overflow:hidden;position:relative}.cover img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}.card:hover .cover img{transform:scale(1.04)}.cover-placeholder{height:100%;display:grid;place-items:center;color:#ff2438;font-size:40px;font-weight:900;direction:ltr;background:radial-gradient(circle,#4a0614,#111 65%)}.card-body{padding:17px}.category{font-size:10px;color:#ff6878;border:1px solid #56212a;border-radius:100px;padding:4px 8px;display:inline-block}.card h3{font-size:18px;margin:11px 0 6px}.card p{font-size:12px;color:#aaa;line-height:1.9;margin:0 0 14px}.card-foot{display:flex;justify-content:space-between;align-items:center;gap:10px}.price{font-size:11px;color:#ccc}.services .cover{aspect-ratio:16/9}.contact-box{border:1px solid #4b2028;background:radial-gradient(circle at 100% 0,#42071155,transparent 45%),#0d0d0d;border-radius:20px;padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact-box h2{font-size:clamp(25px,4vw,38px);margin:0 0 8px}.contact-box p{color:#aaa;margin:0;line-height:1.9;font-size:13px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.footer{border-top:1px solid #ffffff12;padding:24px 0;color:#777;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer strong{color:#ddd}.admin-fab{position:fixed;bottom:18px;left:18px;z-index:25;border-radius:50%;width:48px;height:48px;background:#16090b;border:1px solid #6b2732;color:#ff6979;font-size:19px;cursor:pointer;box-shadow:0 8px 30px #000}.modal{position:fixed;inset:0;background:#000c;backdrop-filter:blur(8px);z-index:80;display:grid;place-items:center;padding:16px;overflow:auto}.modal-panel{width:min(760px,100%);max-height:92vh;overflow:auto;background:#0b0b0b;border:1px solid #48212a;border-radius:18px;padding:22px;box-shadow:0 20px 90px #000}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:20px}.modal-head h2{margin:0;font-size:22px}.close{border:1px solid #333;background:#161616;color:#eee;border-radius:8px;padding:6px 11px;cursor:pointer}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#bbb}.field input,.field textarea,.field select{width:100%;background:#121212;border:1px solid #333;color:#fff;border-radius:9px;padding:11px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:#a82b3b}.field textarea{min-height:90px;resize:vertical}.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.admin-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.admin-tabs button{border:1px solid #333;background:#111;color:#ccc;border-radius:8px;padding:8px 13px;cursor:pointer}.admin-tabs button.active{background:#3b0b13;border-color:#a52a3a;color:#fff}.admin-note{font-size:12px;color:#999;line-height:1.8;margin:10px 0}.admin-list{display:grid;gap:8px;margin-top:16px}.admin-item{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#111;border:1px solid #292929;border-radius:10px;padding:11px}.admin-item strong{font-size:13px}.admin-item small{display:block;color:#888;font-size:10px}.danger{background:#2a0c10!important;border-color:#6e1e2a!important}.toast{position:fixed;bottom:20px;right:50%;transform:translateX(50%);background:#141414;border:1px solid #3a3a3a;color:#fff;padding:12px 18px;border-radius:10px;z-index:200;box-shadow:0 8px 35px #000;font-size:13px;max-width:90%;text-align:center}.toast.error{border-color:#9c2637}.toast.ok{border-color:#28664b}
+@media(max-width:780px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr;gap:25px}.hero{min-height:auto;padding:60px 0 35px}.hero-card{max-width:520px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.section{padding:50px 0}.contact-box{align-items:flex-start;flex-direction:column;padding:25px}.section-head{align-items:flex-start;flex-direction:column}}@media(max-width:480px){.grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.brand{font-size:23px}.hero p{font-size:14px}.modal-panel{padding:16px}.intro-logo{letter-spacing:5px}}
+</style>
+</head>
+<body>
+<canvas class="matrix" id="matrix"></canvas>
+<div class="intro" id="intro"><div class="intro-content"><div class="intro-kicker">HUSSEIN HISHAM / DIGITAL SPACE</div><div class="intro-logo">EGO</div><div class="intro-sub">CREATE YOUR OWN RULES</div><div class="intro-line"></div><button class="skip" id="skipIntro">تخطّي المقدمة ←</button></div></div>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#home">E<span>G</span>O</a><nav class="navlinks"><a href="#projects">المشاريع</a><a href="#services">الخدمات</a><a href="#contact">تواصل</a></nav><button class="btn small" id="navContact">ابدأ مشروعك</button></div></header>
+<main>
+<section class="hero wrap" id="home"><div class="hero-grid"><div><div class="eyebrow"><span class="pulse"></span> مساحة رقمية بإمضاء مختلف</div><h1>مش مجرد موقع…<br><span class="red">دي هويتك.</span></h1><p>أنا حسين هشام، بشتغل على أفكار ومشاريع رقمية بتصميم له شخصية. هنا هتلاقي المشاريع والخدمات المتاحة، ولو عندك فكرة نقدر نحولها لحاجة حقيقية.</p><div class="hero-actions"><a class="btn" href="#projects">اكتشف المشاريع ↓</a><a class="btn ghost" href="https://wa.me/201097404736" target="_blank" rel="noopener">كلّمني على واتساب</a></div></div><aside class="hero-card"><div class="mini-label">INDEPENDENT DIGITAL CREATOR</div><div class="big-number">EGO<span style="color:#fff">.</span></div><p>تصميم وتطوير مواقع وتجارب رقمية بلمسة داكنة، واضحة، ومختلفة عن المعتاد.</p><div class="statrow"><div class="stat"><strong>01</strong><span>فكرة تتحول لواقع</span></div><div class="stat"><strong>∞</strong><span>مساحة للإبداع</span></div></div></aside></div></section>
+<section class="section wrap" id="projects"><div class="section-head"><div><h2>المشاريع <span>المميزة</span></h2><p>مشاريع منشورة فعليًا — التفاصيل والروابط حسب كل مشروع.</p></div><span class="mini-label">SELECTED WORK / 01</span></div><div class="grid" id="projectsGrid"><div class="empty">جاري تحميل المشاريع…</div></div></section>
+<section class="section wrap services" id="services"><div class="section-head"><div><h2>الخدمات <span>المتاحة</span></h2><p>اختار الخدمة المناسبة وابعتلي فكرتك عشان نحدد التفاصيل.</p></div><span class="mini-label">WHAT I CAN BUILD / 02</span></div><div class="grid" id="servicesGrid"><div class="empty">جاري تحميل الخدمات…</div></div></section>
+<section class="section wrap" id="contact"><div class="contact-box"><div><h2>عندك فكرة؟ <span style="color:var(--red)">خلّيها تبدأ.</span></h2><p>ابعتلي فكرتك أو تفاصيل المشروع، وهنشوف أنسب طريقة لتنفيذه.</p></div><div class="contact-actions"><a class="btn" href="https://wa.me/201097404736" target="_blank" rel="noopener">واتساب ↗</a><a class="btn ghost" href="https://www.tiktok.com/@huss3iny138" target="_blank" rel="noopener">TikTok ↗</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> <strong>EGO — Hussein Hisham</strong>. كل الحقوق محفوظة.</span><span>DESIGNED WITH INTENT <span style="color:var(--red)">♥</span></span></div></footer>
+<button class="admin-fab" id="adminOpen" aria-label="لوحة الإدارة" title="لوحة الإدارة">⌘</button>
+<div class="modal hidden" id="adminModal"><div class="modal-panel"><div class="modal-head"><h2>لوحة إدارة EGO</h2><button class="close" id="adminClose">إغلاق ✕</button></div>
+<div id="loginView"><p class="admin-note">الدخول لصاحب الموقع فقط. استخدم بريد حساب Supabase وكلمة المرور؛ لا تشارك كلمة المرور مع أي شخص.</p><form id="loginForm"><div class="form-grid"><div class="field full"><label for="loginEmail">البريد الإلكتروني</label><input id="loginEmail" type="email" autocomplete="username" required placeholder="you@example.com"></div><div class="field full"><label for="loginPassword">كلمة المرور</label><input id="loginPassword" type="password" autocomplete="current-password" required placeholder="كلمة مرور حسابك"></div></div><div class="form-actions"><button class="btn" type="submit">دخول آمن</button></div></form></div>
+<div id="dashboardView" class="hidden"><div class="admin-tabs"><button class="active" data-tab="projectTab">إضافة مشروع</button><button data-tab="serviceTab">إضافة خدمة</button><button data-tab="manageTab">إدارة المحتوى</button></div>
+<div id="projectTab" class="admin-tab"><form id="projectForm"><input type="hidden" id="projectId"><div class="form-grid"><div class="field"><label for="projectTitle">اسم المشروع *</label><input id="projectTitle" required maxlength="100"></div><div class="field"><label for="projectCategory">التصنيف</label><input id="projectCategory" placeholder="مواقع / أدوات / تصميم"></div><div class="field full"><label for="projectSummary">وصف مختصر *</label><textarea id="projectSummary" required maxlength="350"></textarea></div><div class="field full"><label for="projectDescription">تفاصيل إضافية</label><textarea id="projectDescription"></textarea></div><div class="field"><label for="projectUrl">رابط المشروع</label><input id="projectUrl" type="url" placeholder="https://..."></div><div class="field"><label for="projectPrice">السعر / ملاحظة</label><input id="projectPrice" placeholder="حسب تفاصيل المشروع"></div><div class="field"><label for="projectImage">صورة الغلاف</label><input id="projectImage" type="file" accept="image/*"></div><div class="field"><label for="projectStatus">حالة العرض</label><select id="projectStatus"><option value="published">منشور للعامة</option><option value="draft">مسودة مخفية</option></select></div><div class="field"><label for="projectOrder">ترتيب العرض</label><input id="projectOrder" type="number" value="0"></div></div><p class="admin-note">الصور تُرفع إلى Storage في Supabase. ارفع صورة جديدة عند الحاجة فقط؛ عند تعديل مشروع بدون صورة جديدة ستظل صورته الحالية كما هي.</p><div class="form-actions"><button class="btn" type="submit">حفظ المشروع</button><button class="btn ghost" type="button" id="resetProject">تفريغ الحقول</button></div></form></div>
+<div id="serviceTab" class="admin-tab hidden"><form id="serviceForm"><div class="form-grid"><div class="field"><label for="serviceTitle">اسم الخدمة *</label><input id="serviceTitle" required maxlength="100"></div><div class="field"><label for="servicePrice">السعر / ملاحظة</label><input id="servicePrice" placeholder="حسب التفاصيل"></div><div class="field full"><label for="serviceDescription">وصف الخدمة *</label><textarea id="serviceDescription" required maxlength="600"></textarea></div><div class="field"><label for="serviceImage">صورة الخدمة</label><input id="serviceImage" type="file" accept="image/*"></div><div class="field"><label for="serviceOrder">ترتيب العرض</label><input id="serviceOrder" type="number" value="0"></div></div><div class="form-actions"><button class="btn" type="submit">إضافة الخدمة</button></div></form></div>
+<div id="manageTab" class="admin-tab hidden"><p class="admin-note">تقدر تعدّل المشاريع أو تحذفها، وتحذف الخدمات. الحذف نهائي من قاعدة البيانات.</p><h3>المشاريع</h3><div class="admin-list" id="adminProjects"><div class="empty">لا توجد بيانات محمّلة.</div></div><h3 style="margin-top:24px">الخدمات</h3><div class="admin-list" id="adminServices"><div class="empty">لا توجد بيانات محمّلة.</div></div></div>
+<div class="form-actions"><button class="btn ghost" id="logoutBtn" type="button">تسجيل الخروج</button></div></div></div></div>
+<div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+'use strict';
+
+const SUPABASE_URL = 'https://jgxougccjtvkbteqsvfn.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_oyYradXjRgQb0SC-fB-JHGw_Uzu8aXkV';
+const OWNER_UID = '9113fe53-e21a-428e-967d-1e96ca8b5b27';
+const STORAGE_BUCKET = 'site-project-images';
+
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+const $ = (id) => document.getElementById(id);
+let projectsCache = [];
+let servicesCache = [];
+let currentOwner = null;
+let toastTimer = null;
+
+function toast(message, type='ok') {
+  const el = $('toast');
+  el.textContent = message;
+  el.className = 'toast ' + type;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.add('hidden'), 3600);
+}
+
+function escapeHTML(value='') {
+  return String(value).replace(/[&<>"']/g, ch => ({
+    '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
+  }[ch]));
+}
+
+function safeUrl(value='') {
+  try {
+    const u = new URL(value, window.location.href);
+    return ['http:','https:'].includes(u.protocol) ? u.href : '';
+  } catch {
+    return '';
+  }
+}
+
+function slugify(value='') {
+  return String(value).trim().toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9\u0600-\u06ff]+/g,'-')
+    .replace(/^-+|-+$/g,'').slice(0,80) || 'ego-project';
+}
+
+function closeIntro() {
+  $('intro').classList.add('out');
+}
+
+$('skipIntro').addEventListener('click', closeIntro);
+window.addEventListener('load', () => setTimeout(closeIntro, 2600));
+$('year').textContent = new Date().getFullYear();
+
+$('navContact').addEventListener('click', () =>
+  $('contact').scrollIntoView({behavior:'smooth'})
+);
+
+$('adminOpen').addEventListener('click', () => {
+  $('adminModal').classList.remove('hidden');
+});
+
+$('adminClose').addEventListener('click', () =>
+  $('adminModal').classList.add('hidden')
+);
+
+$('adminModal').addEventListener('click', e => {
+  if (e.target === $('adminModal')) {
+    $('adminModal').classList.add('hidden');
+  }
+});
+
+// خلفية Matrix
+(function matrixEffect(){
+  const canvas = $('matrix');
+  const ctx = canvas.getContext('2d');
+  let width=0, height=0, drops=[];
+  const chars = '01アイウエオカキクケコサシスセソタチツテトEGO';
+
+  function resize(){
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width*dpr;
+    canvas.height = height*dpr;
+    canvas.style.width = width+'px';
+    canvas.style.height = height+'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    drops = Array(Math.ceil(width/17)).fill(1)
+      .map(() => Math.random()*height/17);
+  }
+
+  function draw(){
+    ctx.fillStyle = 'rgba(7,7,7,0.09)';
+    ctx.fillRect(0,0,width,height);
+    ctx.fillStyle = '#ff2438';
+    ctx.font = '13px monospace';
+
+    for(let i=0;i<drops.length;i++){
+      const ch = chars[Math.floor(Math.random()*chars.length)];
+      ctx.fillText(ch,i*17,drops[i]*17);
+
+      if(drops[i]*17>height && Math.random()>.975) drops[i]=0;
+      drops[i]+=.6;
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  window.addEventListener('resize',resize);
+  draw();
+})();
+
+function projectCard(p){
+  const image = safeUrl(p.cover_image_url);
+  const link = safeUrl(p.project_url);
+
+  return `<article class="card">
+    <div class="cover">${
+      image
+        ? `<img src="${escapeHTML(image)}" alt="${escapeHTML(p.title)}" loading="lazy" onerror="this.style.display='none'">`
+        : `<div class="cover-placeholder">EGO</div>`
+    }</div>
+    <div class="card-body">
+      <span class="category">${escapeHTML(p.category||'مشروع')}</span>
+      <h3>${escapeHTML(p.title)}</h3>
+      <p>${escapeHTML(p.summary||p.description||'')}</p>
+      <div class="card-foot">
+        <span class="price">${escapeHTML(p.price_note||'تفاصيل عند التواصل')}</span>
+        ${link ? `<a class="btn small" href="${escapeHTML(link)}" target="_blank" rel="noopener">عرض المشروع ↗</a>` : ''}
+      </div>
+    </div>
+  </article>`;
+}
+
+function serviceCard(s){
+  const image = safeUrl(s.image_url);
+
+  return `<article class="card">
+    <div class="cover">${
+      image
+        ? `<img src="${escapeHTML(image)}" alt="${escapeHTML(s.title)}" loading="lazy" onerror="this.style.display='none'">`
+        : `<div class="cover-placeholder">EGO<span style="font-size:14px"> / SERVICE</span></div>`
+    }</div>
+    <div class="card-body">
+      <span class="category">خدمة</span>
+      <h3>${escapeHTML(s.title)}</h3>
+      <p>${escapeHTML(s.description||'')}</p>
+      <div class="card-foot">
+        <span class="price">${escapeHTML(s.price_note||'حسب تفاصيل المشروع')}</span>
+        <a class="btn small" href="https://wa.me/201097404736?text=${encodeURIComponent('أريد الاستفسار عن خدمة: '+(s.title||''))}" target="_blank" rel="noopener">استفسر ↗</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+async function loadPublicContent(){
+  const pBox = $('projectsGrid');
+  const sBox = $('servicesGrid');
+
+  const [pResult,sResult] = await Promise.all([
+    db.from('projects')
+      .select('id,title,slug,summary,description,category,cover_image_url,project_url,price_note,status,sort_order,created_at,updated_at')
+      .eq('status','published')
+      .order('sort_order',{ascending:true})
+      .order('created_at',{ascending:false}),
+
+    db.from('services')
+      .select('id,title,description,image_url,price_note,is_active,sort_order,created_at,updated_at')
+      .eq('is_active',true)
+      .order('sort_order',{ascending:true})
+      .order('created_at',{ascending:false})
+  ]);
+
+  if(pResult.error){
+    console.error('Projects:',pResult.error);
+    pBox.innerHTML='<div class="empty">مش قادرين نحمّل المشاريع دلوقتي. راجع إعدادات Supabase وRLS.</div>';
+  } else {
+    projectsCache = pResult.data||[];
+    pBox.innerHTML = projectsCache.length
+      ? projectsCache.map(projectCard).join('')
+      : '<div class="empty">لسه مفيش مشاريع منشورة. تابعنا قريبًا.</div>';
+  }
+
+  if(sResult.error){
+    console.error('Services:',sResult.error);
+    sBox.innerHTML='<div class="empty">مش قادرين نحمّل الخدمات دلوقتي. راجع إعدادات Supabase وRLS.</div>';
+  } else {
+    servicesCache = sResult.data||[];
+    sBox.innerHTML = servicesCache.length
+      ? servicesCache.map(serviceCard).join('')
+      : '<div class="empty">الخدمات هتظهر هنا أول ما يتم إضافتها.</div>';
+  }
+
+  if(currentOwner) renderAdminLists();
+}
+  $('loginForm').addEventListener('submit', async e=>{
+  e.preventDefault();
+
+  const button = $('loginForm').querySelector('button[type="submit"]');
+  button.disabled = true;
+  button.textContent = 'جاري التحقق…';
+
+  try{
+    const {data,error} = await db.auth.signInWithPassword({
+      email:$('loginEmail').value.trim(),
+      password:$('loginPassword').value
+    });
+
+    if(error) throw error;
+
+    if(!data.user || data.user.id !== OWNER_UID){
+      await db.auth.signOut();
+      throw new Error('الحساب ده مش مصرح له بإدارة الموقع.');
+    }
+
+    currentOwner = data.user;
+    $('loginView').classList.add('hidden');
+    $('dashboardView').classList.remove('hidden');
+
+    toast('تم تسجيل الدخول للوحة الإدارة.');
+    await loadPublicContent();
+
+  }catch(err){
+    toast(err.message||'فشل تسجيل الدخول. راجع البريد وكلمة المرور.','error');
+  }finally{
+    button.disabled = false;
+    button.textContent = 'دخول آمن';
+  }
+});
+
+$('logoutBtn').addEventListener('click',async()=>{
+  await db.auth.signOut();
+  currentOwner = null;
+  $('dashboardView').classList.add('hidden');
+  $('loginView').classList.remove('hidden');
+  $('loginPassword').value = '';
+  toast('تم تسجيل الخروج.');
+});
+
+document.querySelectorAll('[data-tab]').forEach(button=>{
+  button.addEventListener('click',()=>{
+    document.querySelectorAll('[data-tab]').forEach(b=>
+      b.classList.toggle('active',b===button)
+    );
+
+    document.querySelectorAll('.admin-tab').forEach(tab=>
+      tab.classList.toggle('hidden',tab.id!==button.dataset.tab)
+    );
+  });
+});
+
+function ensureOwner(){
+  if(!currentOwner || currentOwner.id!==OWNER_UID){
+    throw new Error('سجّل الدخول بحساب المالك أولًا.');
+  }
+}
+
+async function uploadImage(file,folder){
+  if(!file || !file.size) return '';
+  if(!file.type.startsWith('image/')) throw new Error('اختار ملف صورة صالح.');
+  if(file.size>8*1024*1024) throw new Error('حجم الصورة لازم يكون أقل من 8 ميجابايت.');
+
+  const ext = (file.name.split('.').pop()||'jpg')
+    .toLowerCase().replace(/[^a-z0-9]/g,'')||'jpg';
+
+  const path = `${folder}/${crypto.randomUUID ? crypto.randomUUID() : Date.now()+'-'+Math.random().toString(36).slice(2)}.${ext}`;
+
+  const {error} = await db.storage.from(STORAGE_BUCKET).upload(
+    path,file,{
+      cacheControl:'3600',
+      upsert:false,
+      contentType:file.type
+    }
+  );
+
+  if(error) throw error;
+
+  const {data} = db.storage.from(STORAGE_BUCKET).getPublicUrl(path);
+  return data.publicUrl;
+}
+
+function setBusy(form,busy,label){
+  const b = form.querySelector('button[type="submit"]');
+
+  if(b){
+    b.disabled = busy;
+
+    if(busy){
+      b.dataset.oldText = b.textContent;
+      b.textContent = label||'جاري الحفظ…';
+    }else{
+      b.textContent = b.dataset.oldText||'حفظ';
+    }
+  }
+}
+
+$('projectForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  setBusy(form,true,'جاري حفظ المشروع…');
+
+  try{
+    ensureOwner();
+
+    const id = $('projectId').value;
+    const old = projectsCache.find(p=>p.id===id);
+    let imageUrl = old?.cover_image_url||'';
+    const file = $('projectImage').files[0];
+
+    if(file) imageUrl = await uploadImage(file,'projects');
+
+    const title = $('projectTitle').value.trim();
+
+    const payload = {
+      title,
+      slug:slugify(title),
+      category:$('projectCategory').value.trim(),
+      summary:$('projectSummary').value.trim(),
+      description:$('projectDescription').value.trim(),
+      project_url:safeUrl($('projectUrl').value.trim()),
+      price_note:$('projectPrice').value.trim(),
+      cover_image_url:imageUrl,
+      status:$('projectStatus').value,
+      sort_order:Number($('projectOrder').value)||0,
+      updated_at:new Date().toISOString()
+    };
+
+    const result = id
+      ? await db.from('projects').update(payload).eq('id',id).select().single()
+      : await db.from('projects').insert(payload).select().single();
+
+    if(result.error) throw result.error;
+
+    toast(id?'تم تعديل المشروع.':'تمت إضافة المشروع.');
+    resetProjectForm();
+    await loadPublicContent();
+    document.querySelector('[data-tab="manageTab"]').click();
+
+  }catch(err){
+    console.error(err);
+    toast(err.message||'حصل خطأ أثناء حفظ المشروع.','error');
+  }finally{
+    setBusy(form,false);
+  }
+});
+
+function resetProjectForm(){
+  $('projectForm').reset();
+  $('projectId').value='';
+  $('projectOrder').value='0';
+  $('projectStatus').value='published';
+}
+
+$('resetProject').addEventListener('click',resetProjectForm);
+
+$('serviceForm').addEventListener('submit',async e=>{
+  e.preventDefault();
+
+  const form = e.currentTarget;
+  setBusy(form,true,'جاري إضافة الخدمة…');
+
+  try{
+    ensureOwner();
+
+    const file = $('serviceImage').files[0];
+    const imageUrl = file ? await uploadImage(file,'services') : '';
+
+    const payload = {
+      title:$('serviceTitle').value.trim(),
+      description:$('serviceDescription').value.trim(),
+      price_note:$('servicePrice').value.trim(),
+      image_url:imageUrl,
+      is_active:true,
+      sort_order:Number($('serviceOrder').value)||0
+    };
+
+    const {error} = await db.from('services').insert(payload);
+    if(error) throw error;
+
+    form.reset();
+    $('serviceOrder').value='0';
+    toast('تمت إضافة الخدمة.');
+    await loadPublicContent();
+    document.querySelector('[data-tab="manageTab"]').click();
+
+  }catch(err){
+    console.error(err);
+    toast(err.message||'حصل خطأ أثناء إضافة الخدمة.','error');
+  }finally{
+    setBusy(form,false);
+  }
+});
+
+async function renderAdminLists(){
+  if(!currentOwner) return;
+
+  const pEl = $('adminProjects');
+  const sEl = $('adminServices');
+
+  pEl.innerHTML='<div class="empty">جاري تحميل المشاريع…</div>';
+  sEl.innerHTML='<div class="empty">جاري تحميل الخدمات…</div>';
+
+  const [pr,sr] = await Promise.all([
+    db.from('projects')
+      .select('id,title,slug,summary,description,category,cover_image_url,project_url,price_note,status,sort_order,created_at,updated_at')
+      .order('created_at',{ascending:false}),
+
+    db.from('services')
+      .select('id,title,description,image_url,price_note,is_active,sort_order,created_at,updated_at')
+      .order('created_at',{ascending:false})
+  ]);
+
+  if(pr.error){
+    pEl.innerHTML=`<div class="empty">تعذر تحميل المشاريع: ${escapeHTML(pr.error.message)}</div>`;
+  }else{
+    const rows = pr.data||[];
+
+    if(!rows.length){
+      pEl.innerHTML='<div class="empty">مفيش مشاريع مضافة لحد دلوقتي.</div>';
+    }else{
+      pEl.innerHTML=rows.map(p=>`
+        <div class="admin-item">
+          <div>
+            <strong>${escapeHTML(p.title)}</strong>
+            <small>${escapeHTML(p.status||'')} · ${escapeHTML(p.category||'بدون تصنيف')}</small>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <button class="btn small ghost" data-edit-project="${escapeHTML(p.id)}">تعديل</button>
+            <button class="btn small danger" data-delete-project="${escapeHTML(p.id)}">حذف</button>
+          </div>
+        </div>`).join('');
+    }
+  }
+
+  if(sr.error){
+    sEl.innerHTML=`<div class="empty">تعذر تحميل الخدمات: ${escapeHTML(sr.error.message)}</div>`;
+  }else{
+    const rows = sr.data||[];
+
+    if(!rows.length){
+      sEl.innerHTML='<div class="empty">مفيش خدمات مضافة لحد دلوقتي.</div>';
+    }else{
+      sEl.innerHTML=rows.map(s=>`
+        <div class="admin-item">
+          <div>
+            <strong>${escapeHTML(s.title)}</strong>
+            <small>${s.is_active?'ظاهرة للعامة':'مخفية'} · ${escapeHTML(s.price_note||'')}</small>
+          </div>
+          <button class="btn small danger" data-delete-service="${escapeHTML(s.id)}">حذف</button>
+        </div>`).join('');
+    }
+  }
+
+  pEl.querySelectorAll('[data-edit-project]').forEach(btn=>
+    btn.addEventListener('click',()=>editProject(btn.dataset.editProject))
+  );
+
+  pEl.querySelectorAll('[data-delete-project]').forEach(btn=>
+    btn.addEventListener('click',()=>deleteProject(btn.dataset.deleteProject))
+  );
+
+  sEl.querySelectorAll('[data-delete-service]').forEach(btn=>
+    btn.addEventListener('click',()=>deleteService(btn.dataset.deleteService))
+  );
+}
+
+async function editProject(id){
+  ensureOwner();
+
+  const {data,error} = await db.from('projects').select('*').eq('id',id).single();
+
+  if(error){
+    toast(error.message,'error');
+    return;
+  }
+
+  $('projectId').value=data.id;
+  $('projectTitle').value=data.title||'';
+  $('projectCategory').value=data.category||'';
+  $('projectSummary').value=data.summary||'';
+  $('projectDescription').value=data.description||'';
+  $('projectUrl').value=data.project_url||'';
+  $('projectPrice').value=data.price_note||'';
+  $('projectStatus').value=data.status||'published';
+  $('projectOrder').value=data.sort_order??0;
+  $('projectImage').value='';
+
+  document.querySelector('[data-tab="projectTab"]').click();
+  $('projectTab').scrollIntoView({behavior:'smooth',block:'start'});
+  toast('عدّل البيانات ثم اضغط حفظ المشروع.');
+}
+
+async function deleteProject(id){
+  if(!confirm('متأكد إنك عايز تحذف المشروع ده نهائيًا؟')) return;
+
+  try{
+    ensureOwner();
+    const {error} = await db.from('projects').delete().eq('id',id);
+    if(error) throw error;
+    toast('تم حذف المشروع.');
+    await loadPublicContent();
+  }catch(err){
+    toast(err.message||'فشل حذف المشروع.','error');
+  }
+}
+
+async function deleteService(id){
+  if(!confirm('متأكد إنك عايز تحذف الخدمة دي نهائيًا؟')) return;
+
+  try{
+    ensureOwner();
+    const {error} = await db.from('services').delete().eq('id',id);
+    if(error) throw error;
+    toast('تم حذف الخدمة.');
+    await loadPublicContent();
+  }catch(err){
+    toast(err.message||'فشل حذف الخدمة.','error');
+  }
+}
+
+// استعادة جلسة المالك إذا كان مسجلًا بالفعل.
+(async function restoreSession(){
+  try{
+    const {data} = await db.auth.getSession();
+    const user = data?.session?.user;
+
+    if(user && user.id===OWNER_UID){
+      currentOwner = user;
+      $('loginView').classList.add('hidden');
+      $('dashboardView').classList.remove('hidden');
+    }
+  }catch(err){
+    console.warn('Session restore:',err);
+  }
+
+  await loadPublicContent();
+})();
+</script>
+</body>
+</html>
